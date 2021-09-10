@@ -64,24 +64,13 @@
 // //Task 5
 // //Запросить у пользователя пятиразрядное число и определить, является ли оно палиндромом.
 // let y = prompt('Enter the number from 10 000 to 99 999', 0);
-// x = parseInt(y, 10);
+// let x = prompt('Enter the number from 10 000 to 99 999', 0);
 // console.log(typeof x);
 //     if (x[0] == x[4] && x[1] == x[3]) {
 //         console.log('The number is a palindrome');
 //     } else {
 //         console.log('The number is NOT a palindrome');
 //     }
-//     function checkData() {
-//         if (y.length == 5) {
-//           return true;
-//         } else {
-//           alert("Enter exactly 5 digit. " +
-//           y + " is not valid.");
-//           return false;
-//         }
-//       } 
-//     checkData(y)
-
 
 // //Task 6
 // //Написать конвертор валют. Пользователь вводит количество USD, выбирает, в какую валюту хочет перевести EUR, UAN или AZN, и получает в ответ соответствующую сумму.
