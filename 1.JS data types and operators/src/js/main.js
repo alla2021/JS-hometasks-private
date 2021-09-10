@@ -46,7 +46,7 @@
 //     }
 
 // //Task 3
-// let number = +prompt('Enter the number from 100 to 999');
+// let number = prompt('Enter the number from 100 to 999');
 //     if (number[0] == number[1] || number[0] == number[2] || number[1] == number[2]) {
 //             console.log('The number contains the same digits');
 //         } else {
