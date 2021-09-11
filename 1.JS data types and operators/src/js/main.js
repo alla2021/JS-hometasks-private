@@ -63,7 +63,6 @@
 
 // //Task 5
 // //Запросить у пользователя пятиразрядное число и определить, является ли оно палиндромом.
-// let y = prompt('Enter the number from 10 000 to 99 999', 0);
 // let x = prompt('Enter the number from 10 000 to 99 999', 0);
 // console.log(typeof x);
 //     if (x[0] == x[4] && x[1] == x[3]) {
