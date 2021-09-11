@@ -55,7 +55,7 @@
 
 // //Task 4
 // let anyYear = +prompt('Enter any year');
-//     if (anyYear%4 == 0 && anyYear %100 !== 0) {
+//     if (anyYear % 400 === 0 || (anyYear%4 === 0 && anyYear %100 !=== 0)) {
 //         console.log('Leap year');
 //     } else {
 //         console.log('Not Leap Year');
