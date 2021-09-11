@@ -11,7 +11,7 @@
 //     } 
 
 // //Task 2
-// let num  = +prompt('Enter the number from 0 to 9');
+// let num  = prompt('Enter the number from 0 to 9');
 //     switch (num){
 //         case '0':
 //             console.log('0 is ")"');
@@ -43,6 +43,8 @@
 //         case '9':
 //             console.log('9 is "(!)"');
 //             break;
+//         default:
+//             console.log('Only 1 digits!');
 //     }
 
 // //Task 3
