@@ -1,5 +1,6 @@
 // //Task 1
-// let age  = +prompt('How old are you?');
+// let age  = +prompt('How old are you?',0);
+// console.log(typeof age);
 //     if (age >= 0 && age < 12) {
 //         console.log('You are a child');
 //     } else if (age >= 12 && age < 18) {
@@ -8,10 +9,13 @@
 //         console.log('You are an adult');
 //     } else if (age >= 60) {
 //         console.log('You are an retired person');
-//     } 
+//     } else {
+//   alert('error')
+// }
 
 // //Task 2
-// let num  = +prompt('Enter the number from 0 to 9');
+// let num  = prompt('Enter the number from 0 to 9', 0);
+// console.log(typeof num);
 //     switch (num){
 //         case '0':
 //             console.log('0 is ")"');
@@ -43,10 +47,12 @@
 //         case '9':
 //             console.log('9 is "(!)"');
 //             break;
+//         default:
+//             console.log('Only 1 digits!');
 //     }
 
 // //Task 3
-// let number = prompt('Enter the number from 100 to 999');
+// let number = prompt('Enter the number from 100 to 999',999);
 //     if (number[0] == number[1] || number[0] == number[2] || number[1] == number[2]) {
 //             console.log('The number contains the same digits');
 //         } else {
@@ -54,8 +60,8 @@
 //         }
 
 // //Task 4
-// let anyYear = +prompt('Enter any year');
-//     if (anyYear%4 == 0 && anyYear %100 !== 0) {
+// let anyYear = +prompt('Enter any year',2021);
+//     if (anyYear % 400 === 0 || (anyYear%4 === 0 && anyYear %100 !=== 0)) {
 //         console.log('Leap year');
 //     } else {
 //         console.log('Not Leap Year');
@@ -63,8 +69,7 @@
 
 // //Task 5
 // //Запросить у пользователя пятиразрядное число и определить, является ли оно палиндромом.
-// let y = prompt('Enter the number from 10 000 to 99 999', 0);
-// let x = prompt('Enter the number from 10 000 to 99 999', 0);
+// let x = prompt('Enter the number from 10 000 to 99 999', 12321);
 // console.log(typeof x);
 //     if (x[0] == x[4] && x[1] == x[3]) {
 //         console.log('The number is a palindrome');
@@ -121,3 +126,6 @@
 //     let oldDate = new Date(date[2], date[1]-1, date[0]);
 //     oldDate.setDate(oldDate.getDate()+1);
 //     alert(oldDate);
+
+
+
