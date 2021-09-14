@@ -49,7 +49,7 @@
 
 // //Task 3
 // let number = prompt('Enter the number from 100 to 999');
-//     if (number[0] == number[1] || number[0] == number[2] || number[1] == number[2]) {
+//     if (number[0] === number[1] || number[0] === number[2] || number[1] === number[2]) {
 //             console.log('The number contains the same digits');
 //         } else {
 //             console.log('The number contains different digits');
@@ -57,7 +57,7 @@
 
 // //Task 4
 // let anyYear = +prompt('Enter any year');
-//     if (anyYear % 400 === 0 || (anyYear%4 === 0 && anyYear %100 !=== 0)) {
+//     if (anyYear % 400 === 0 || (anyYear % 4 === 0 && anyYear % 100 !=== 0)) {
 //         console.log('Leap year');
 //     } else {
 //         console.log('Not Leap Year');
@@ -87,13 +87,15 @@
 //         case '3':
 //             console.log(amount*1.7 + 'AZN');
 //             break;
+//         default:
+//             break;
 //     }
 
 // //Task 8
 // //Запросить у пользователя длину окружности и периметр квадрата. Определить, может ли такая окружность поместиться в указанный квадрат.
 // let circumference = +prompt('Enter the circumference');
 // let perimetersSquare = +prompt('Enter the perimeters of the square');
-// if (perimetersSquare/4 == circumference/Math.PI || perimetersSquare/4 <= circumference/Math.PI ) {
+// if (perimetersSquare / 4 == circumference / Math.PI || perimetersSquare / 4 <= circumference / Math.PI ) {
 //         console.log('Circle inscribed in a square');
 //     }
 //     else {
