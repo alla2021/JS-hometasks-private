@@ -22,24 +22,31 @@
 //task3
 //Написать функцию, которая принимает три отдельные цифры
 // и превращает их в одно число. Например: цифры 1, 4, 9 превратятся в число 149.
-// function inputNumbers (a, b, c) {
-//   return(a + b + c);
-// }
-// console.log(inputNumbers('1', '3', '4'));
+function inputNumbers (a, b, c) {
+    a = String(a);
+    b = String(b);
+    c = String(c);
+    n = a + b + c;
+    console.log(typeof(n));
+    return(parseInt(n));
+}
+let digits = inputNumbers(1, 3, 4);
+console.log(typeof(digits));
+console.log(digits);
 
 //task4
 //Написать функцию, которая принимает длину и ширину прямоугольника 
 //и вычисляет его площадь. Если в функцию передали 1 параметр, то она вычисляет площадь квадрата.
-// let a=prompt("Enter the lenght");
-// let b=prompt("Enter the width");
+// let a = prompt("Enter the lenght");
+// let b = prompt("Enter the width");
 // function square (a, b){
-// if(a !='' && b !='')
-// return a*b;
-// else if(a !='' && b ==='')
-// return a*a;
-// else if(a ==='' && b != '')
+// if(a != '' && b != '')
+// return a * b;
+// else if(a != '' && b === '')
+// return a * a;
+// else if(a === '' && b != '')
 // return b * b; }
-// console.log(square(a,b));
+// console.log(square(a, b));
 
 //task5
 //Написать функцию, которая проверяет, является ли переданное ей число совершенным. 
