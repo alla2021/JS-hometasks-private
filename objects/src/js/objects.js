@@ -148,21 +148,21 @@
 // Также в объектах должны быть два метода, первый метод length() выводит в консоль количество ключей в объекте, 
 //при вызове метода  user.length()  должно отобразиться количество ключей; второй метод 
 // checkPermission() показывает alert с текстом "Access granted" если role === 'admin', и "Access denied" если role === 'user'.
-const user = {    
-    name: "John",  
-    age: 30,
-  };
-const admin = {};
-for (let key in user) {
-    console.log(user[key]);
-    admin[key] = user[key];
-}
-user.role = "User";
-admin.role = "Admin";
-let keyCountUser = Object.keys(user).length;
-let keyCountAdmin = Object.keys(admin).length;
-console.log('User--->' + keyCountUser);
-console.log('Admin--->' + keyCountAdmin);
+// const user = {    
+//     name: "John",  
+//     age: 30,
+//   };
+// const admin = {};
+// for (let key in user) {
+//     console.log(user[key]);
+//     admin[key] = user[key];
+// }
+// user.role = "User";
+// admin.role = "Admin";
+// let keyCountUser = Object.keys(user).length;
+// let keyCountAdmin = Object.keys(admin).length;
+// console.log('User--->' + keyCountUser);
+// console.log('Admin--->' + keyCountAdmin);
 
 //task2
 //+++Создать функцию createUser() которая создает объект со значениями name, age, height, weight. 
@@ -170,19 +170,17 @@ console.log('Admin--->' + keyCountAdmin);
 //объект не должен создаться. Если в функцию не переданы аргументы, вывести аргументы по умолчанию. 
 //+++Функция должна вызываться так createUser('John', 39, 178, 67)
 
-// function createUser(userName, userAge, userHeight, userWeight) {
-//     if(typeof(userAge, userHeight, userWeight) === 'number') {
-//         return {
-//             name: userName,
-//             age: userAge,
-//             height: userHeight,
-//             weight: userWeight,
-//             getInfo: function() {
-//                 console.log("Name: " + this.name + " age: " + this.age + " height: " + this.age + " weight: " + this.age );
-//             }
-//         }
-//       } else {
-//         alert('неверный тип');
-//       }
-// };
-// console.log(createUser('John', 39, 178, 67));
+function createUser(userName = 'John', userAge = 39, userHeight = 178, userWeight = 67) {
+    if(typeof userAge !== 'number' || typeof userHeight !== 'number' || typeof userWeight !== 'number' ) {
+        return;
+    } 
+        return {
+            name: userName,
+            age: userAge,
+            height: userHeight,
+            weight: userWeight,
+            getInfo: function() {
+                console.log("Name: " + this.name + " age: " + this.age + " height: " + this.age + " weight: " + this.age );
+            }
+};
+createUser();
