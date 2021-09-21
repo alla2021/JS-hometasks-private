@@ -164,35 +164,25 @@ console.log(admin);
 console.log(Object.keys(user));
 console.log(Object.keys(admin));
 
-
 //task2
 //+++Создать функцию createUser() которая создает объект со значениями name, age, height, weight. 
 //Для свойств age, height, weight должен быть тип number, иначе вывести alert, что неверный тип и 
 //объект не должен создаться. Если в функцию не переданы аргументы, вывести аргументы по умолчанию. 
 //+++Функция должна вызываться так createUser('John', 39, 178, 67)
 
-function createUser(userName, userAge, userHeight, userWeight) {
-    return {
-        name: userName,
-        age: userAge,
-        height: userHeight,
-        weight: userWeight,
-        getInfo: function() {
-            console.log("Name: " + this.name + " age: " + this.age + " height: " + this.age + " weight: " + this.age );
-        }
-    };
-};
-console.log(createUser('John', 39, 178, 67));
-
-//Написать функцию, которая принимает длину и ширину прямоугольника 
-//и вычисляет его площадь. Если в функцию передали 1 параметр, то она вычисляет площадь квадрата.
-// let a = prompt("Enter the lenght");
-// let b = prompt("Enter the width");
-// function square (a, b){
-// if(a != '' && b != '')
-// return a * b;
-// else if(a != '' && b === '')
-// return a * a;
-// else if(a === '' && b != '')
-// return b * b; }
-// console.log(square(a, b));
+// function createUser(userName, userAge, userHeight, userWeight) {
+//     if(typeof(userAge, userHeight, userWeight) === 'number') {
+//         return {
+//             name: userName,
+//             age: userAge,
+//             height: userHeight,
+//             weight: userWeight,
+//             getInfo: function() {
+//                 console.log("Name: " + this.name + " age: " + this.age + " height: " + this.age + " weight: " + this.age );
+//             }
+//         }
+//       } else {
+//         alert('неверный тип');
+//       }
+// };
+// console.log(createUser('John', 39, 178, 67));
