@@ -159,10 +159,10 @@ for (let key in user) {
 }
 user.role = "User";
 admin.role = "Admin";
-console.log(user);
-console.log(admin);
-console.log(Object.keys(user));
-console.log(Object.keys(admin));
+let keyCountUser = Object.keys(user).length;
+let keyCountAdmin = Object.keys(admin).length;
+console.log('User--->' + keyCountUser);
+console.log('Admin--->' + keyCountAdmin);
 
 //task2
 //+++Создать функцию createUser() которая создает объект со значениями name, age, height, weight. 
