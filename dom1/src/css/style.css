@@ -1,0 +1,70 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  min-height: 200px;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0 0 24px 0;
+}
+
+.list__item {
+  border-bottom: 1px solid;
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: black;
+}
+
+
+
+
+
+/*  task3 */
+.traffic-light {
+  margin: 0 auto;
+  width: 140px;
+  height: 270px;
+  padding: 10px 0;
+  padding-bottom: 0;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+  border-radius: 5px;
+}
+.traffic-light__color {
+  width: 70px;
+  height: 70px;
+  border-radius: 100%;
+  border: 2px solid white;
+  background-color:white;
+}
+.traffic-light__off {
+  background-color: white;
+}
+.traffic-light__color.red {
+  background-color: red;
+}
+.traffic-light__color.green {
+  background-color: green;
+}
+.traffic-light__color.yellow{
+  background-color: yellow;
+}
