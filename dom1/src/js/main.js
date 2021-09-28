@@ -57,7 +57,6 @@ closeBtn.addEventListener('click', function () {
 // 3. Создать HTML-страницу со светофором и кнопкой,
 // которая переключает светофор на следующий цвет.
 
-// не работает, почему?
 
 const trafficLights = document.querySelector(".traffic-light");
 
