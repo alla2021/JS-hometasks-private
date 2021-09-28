@@ -23,8 +23,7 @@ body {
 }
 
 .list__item {
-  border-bottom: 1px solid;
-  padding: 16px;
+  padding: 6px;
   display: flex;
   align-items: center;
   justify-content: space-between;
