@@ -1,4 +1,4 @@
-//task1 нет нумерации списка?
+//task1 
 let playList = [
     {author: "LED ZEPPELIN", song:"STAIRWAY TO HEAVEN"},
     {author: "QUEEN", song:"BOHEMIAN RHAPSODY"},
