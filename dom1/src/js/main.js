@@ -10,7 +10,7 @@ let playList = [
     {author: "METALLICA", song:"ENTER SANDMAN"},
 ];
 
-function renderPlayElement (item) {
+function printPlayElement (item) {
     const listItem = document.createElement('li');
     const itemText = document.createElement('p');
 
@@ -21,16 +21,16 @@ function renderPlayElement (item) {
     listItem.append(itemText);
     return(listItem);
 }    
-// renderPlayElement () 
+// printPlayElement () 
 
-function renderListSongs(arr) {
+function printListSongs(arr) {
     const list = document.querySelector('#playlist-id');
     for(let item of arr){
-        const songs = renderPlayElement(item);
+        const songs = printPlayElement(item);
         list.append(songs);
     }
 }
-renderListSongs (playList)
+printListSongs (playList)
 
 //2. Создать HTML-страницу с кнопкой "Открыть"
 // и модальным окном. На модальном окне должен быть
