@@ -12,7 +12,7 @@ body {
 .container {
   max-width: 900px;
   margin: 0 auto;
-  min-height: 200px;
+  min-height: 300px;
 }
 
 .wrapper {
@@ -30,13 +30,39 @@ body {
   justify-content: space-between;
   color: black;
 }
+/*  task2 */
+.modal__window {
+  display: none;
+  margin: 0 auto;
+  text-align: center;
+  padding: 10px;
+  width: 400px;
+  height: 150px;
+  background-color: green;
+  border-radius: 8px;
+  color: white;
+}
+.btn__close {
+  border-radius: 5px;
+  font-size: 23px;
+  border: none;
+  padding: 10px 30px;
+  background-color: red;
+  color: white;
+  
+}
 
-
-
-
+.btn__open {
+  border-radius: 5px;
+  font-size: 23px;
+  border: none;
+  padding: 10px 30px;
+  background-color: green;
+  color: white;
+}
 
 /*  task3 */
-.traffic-light {
+.traffic-lights {
   margin: 0 auto;
   width: 140px;
   height: 270px;
@@ -49,22 +75,20 @@ body {
   background-color: black;
   border-radius: 5px;
 }
-.traffic-light__color {
+.traffic-light {
   width: 70px;
   height: 70px;
   border-radius: 100%;
   border: 2px solid white;
   background-color:white;
 }
-.traffic-light__off {
-  background-color: white;
-}
-.traffic-light__color.red {
+
+.color__red {
   background-color: red;
 }
-.traffic-light__color.green {
+.color__green {
   background-color: green;
 }
-.traffic-light__color.yellow{
+.color__yellow {
   background-color: yellow;
 }

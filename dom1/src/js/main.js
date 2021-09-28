@@ -1,4 +1,4 @@
-//task1 как сделать вывод исполнителя + песни ??
+//task1 
 let playList = [
     {author: "LED ZEPPELIN", song:"STAIRWAY TO HEAVEN"},
     {author: "QUEEN", song:"BOHEMIAN RHAPSODY"},
@@ -16,7 +16,7 @@ function renderPlayElement (item) {
 
     listItem.classList.add ('list__item');
     itemText.classList.add ('list__item-text');
-    itemText.innerText = item.author + ' - ' +item.song; 
+    itemText.innerText = item.author + ' - ' + item.song; 
 
     listItem.append(itemText);
     return(listItem);
@@ -39,10 +39,42 @@ renderListSongs (playList)
 // "Открыть" появляется модальное окно, на
 // кнопку "Закрыть" – исчезает.
 
+// прописала в css display: none; для модального окна до нажатия на кнопку Открыть, 
+//как это сделать в js?
 
 
+const openBtn = document.getElementById('btn-open');
+const closeBtn = document.getElementById('btn-close');
+
+openBtn.addEventListener('click', function () {
+    document.getElementById("modal").style.display = "block";
+   })
+
+closeBtn.addEventListener('click', function () {
+    document.getElementById("modal").style.display = "none";
+   })
 
 // 3. Создать HTML-страницу со светофором и кнопкой,
 // которая переключает светофор на следующий цвет.
-// const trafficLights = document.querySelector("div.traffic__light");
 
+// не работает, почему?
+
+const trafficLights = document.querySelector(".traffic-light");
+
+const redLight = document.getElementById("red");
+const yellowLight = document.getElementById("yellow");
+const greenLight = document.getElementById("green");
+const button = document.getElementById("btn");
+
+button.addEventListener("click", function() {
+    if (redLight.classList.contains("color__red")) {
+        redLight.classList.remove("color__red");
+        yellowLight.classList.add("color__yellow");
+    } else if (yellowLight.classList.contains("color__yellow")) {
+        yellowLight.classList.remove("color__yellow");
+        greenLight.classList.add("color__green");
+    } else if (greenLight.classList.contains("color__green")) {
+        greenLight.classList.remove("color__green");
+        redLight.classList.add("color__red");
+        }
+});
