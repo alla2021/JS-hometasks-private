@@ -48,10 +48,12 @@ const closeBtn = document.getElementById('btn-close');
 
 openBtn.addEventListener('click', function () {
     document.getElementById("modal").style.display = "block";
+    openBtn.style.display = "none";
    })
 
 closeBtn.addEventListener('click', function () {
     document.getElementById("modal").style.display = "none";
+    openBtn.style.display = "block";
    })
 
 // 3. Создать HTML-страницу со светофором и кнопкой,

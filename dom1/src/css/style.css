@@ -49,10 +49,12 @@ body {
   padding: 10px 30px;
   background-color: red;
   color: white;
-  
 }
 
 .btn__open {
+  margin: 0 auto;
+  text-align: center;
+  display: block;
   border-radius: 5px;
   font-size: 23px;
   border: none;
@@ -86,9 +88,11 @@ body {
 .color__red {
   background-color: red;
 }
-.color__green {
-  background-color: green;
-}
+
 .color__yellow {
   background-color: yellow;
+}
+
+.color__green {
+  background-color: green;
 }
