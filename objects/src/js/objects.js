@@ -170,17 +170,17 @@
 //объект не должен создаться. Если в функцию не переданы аргументы, вывести аргументы по умолчанию. 
 //+++Функция должна вызываться так createUser('John', 39, 178, 67)
 
-function createUser(userName = 'John', userAge = 39, userHeight = 178, userWeight = 67) {
-    if(typeof userAge !== 'number' || typeof userHeight !== 'number' || typeof userWeight !== 'number' ) {
-        return;
-    } 
-        return {
-            name: userName,
-            age: userAge,
-            height: userHeight,
-            weight: userWeight,
-            getInfo: function() {
-                console.log("Name: " + this.name + " age: " + this.age + " height: " + this.age + " weight: " + this.age );
-            }
-};
-createUser();
+// function createUser(userName = 'John', userAge = 39, userHeight = 178, userWeight = 67) {
+//     if(typeof userAge !== 'number' || typeof userHeight !== 'number' || typeof userWeight !== 'number' ) {
+//         return;
+//     } 
+//         return {
+//             name: userName,
+//             age: userAge,
+//             height: userHeight,
+//             weight: userWeight,
+//             getInfo: function() {
+//                 console.log("Name: " + this.name + " age: " + this.age + " height: " + this.age + " weight: " + this.age );
+//             }
+// };
+// createUser();
