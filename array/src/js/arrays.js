@@ -100,7 +100,10 @@
 // });
 
 // Вывод на экран аудиторий для указанного факультета;
-// function showClassroomForCourse (arr) {
+// function showClassroomForCourse (arr, faculty) {
+return newArray.filter(function(item) {
+  return item.department === faculty
+})
 //     const newArray = arr.slice();
 //     return newArray.map(function (item) {
 //         return {department: item.department, name: item.name.toString(), }
