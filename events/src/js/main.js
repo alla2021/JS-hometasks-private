@@ -55,3 +55,34 @@ keyPress()
 //Создать HTML-страницу с большой таблицей. При клике по заголовку колонки, 
 //необходимо отсортировать данные по этой колонке. Учтите, что числовые значения должны 
 //сортироваться как числа, а не как строки.
+
+const table = document.querySelector('table');
+const tableBody = document.querySelector('tbody');
+const columsTitle = document.querySelectorAll('th');
+
+function sortColumn (event) {
+  const rows = Array.from(tableBody.rows);
+
+  const sortesRows = rows.sort ((a, b) => {
+    const current = a.cells[index].innerText;
+    const current = b.cells[index].innerText;
+
+    if (current > next) {
+      return 1;
+    }
+
+    if (current > next) {
+      return - 1;
+    }
+
+    return 0;
+  })
+
+  for (let row of sortesRows) {
+    tableBody.append(row);
+  }
+}
+
+columsTitle.forEach(item => item.addEventListener('click', sortColumn));
+
+console.log(columsTitle)
