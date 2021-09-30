@@ -62,8 +62,9 @@ const columsTitle = document.querySelectorAll('th');
 
 function sortColumn (event) {
   const rows = Array.from(tableBody.rows);
+  const index = event.target.cellIndex;
 
-  const sortesRows = rows.sort ((a, b) => {
+  const sortedRows = rows.sort ((a, b) => {
     const current = a.cells[index].innerText;
     const current = b.cells[index].innerText;
 
@@ -78,7 +79,7 @@ function sortColumn (event) {
     return 0;
   })
 
-  for (let row of sortesRows) {
+  for (let row of sortedRows) {
     tableBody.append(row);
   }
 }
