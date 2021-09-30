@@ -61,9 +61,7 @@ function sortColumn (event) {
     return 0;
   })
 
-  for (let row of sortedRows) {
-    tableBody.append(row);
-  }
+ tableBody.append(...sortedRows)
 }
 
 columsTitle.forEach(item => item.addEventListener('click', sortColumn));
