@@ -31,25 +31,7 @@ resize.addEventListener('mousedown', initialResize);
 //вместо textarea появляется div с уже измененным текстом. 
 // //Не забудьте выключить поведение по умолчанию для этих сочетаний клавиш.
 
-function keyPress() {
-document.addEventListener('keydown', function (event) {
-  console.log(`event`, event)
-  event.preventDefault();
-  if (event.code === ('ControlLeft' && 'KeyE')) {
-    let elem = document.querySelector('#text-textarea');
-    if (event.code === 'KeyE' && elem.nodeName === 'DIV') {
-    let newEl = document.createElement('textarea');
-    newEl.classList.add('text__textarea');
-  } else if (event.code === 'ControlLeft' && elem.nodeName === 'texarea') {
-    let newE = document.createElement("div");
-    newE.className = "content__textarea";
-    newE.textContent = elem.value;
-    changeText.className = "text__textarea--modify";
-  }
-}
-})
-}
-keyPress()
+
 
 //Task2
 //Создать HTML-страницу с большой таблицей. При клике по заголовку колонки, 
@@ -72,7 +54,7 @@ function sortColumn (event) {
       return 1;
     }
 
-    if (current > next) {
+    if (current < next) {
       return - 1;
     }
 
