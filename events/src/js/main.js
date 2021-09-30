@@ -5,20 +5,20 @@
 const resizeBox = document.querySelector("#text-holder");
 const resize = document.querySelector(".text-holder--resize");
 
-const initialResize = (e) => {
-    window.addEventListener('mousemove', startResize);
+function initialResize () {
+  window.addEventListener('mousemove', startResize);
     window.addEventListener('mouseup', stopResize);
-  };
+};
 
-const startResize = (e) => {
-    resizeBox.style.width = (e.clientX - resizeBox.offsetLeft) + 'px';
-  };
+function startResize (el) {
+  resizeBox.style.width = (el.clientX - resizeBox.offsetLeft) + 'px';
+};
 
-const stopResize = (e) => {
-    window.removeEventListener('mousemove', startResize);
+function stopResize (el) {
+  window.removeEventListener('mousemove', startResize);
     window.removeEventListener('mouseup', stopResize);
-    console.log(e);
-  };
+    console.log(el);
+}
 
 resize.addEventListener('mousedown', initialResize);
 
