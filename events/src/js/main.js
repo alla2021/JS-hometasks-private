@@ -31,6 +31,29 @@ resize.addEventListener('mousedown', initialResize);
 //вместо textarea появляется div с уже измененным текстом. 
 // //Не забудьте выключить поведение по умолчанию для этих сочетаний клавиш.
 
+// const itemHolder = document.querySelector('#text-textarea');
+// const itemText = document.querySelector('#text');
+// const inputField = document.createElement('textarea');
+
+// itemHolder.append(inputField);
+// itemText.addEventListener('keydown', function(event) {
+//   event.preventDefault();
+//   if (event.code === ('ControlLeft' && 'KeyE')) {
+//     this.style.display = 'none';
+//     inputField.value = this.innerContent;
+//     inputField.style.display = 'block';
+// }});
+
+// inputField.addEventListener('change', function () {
+//   itemText.innerText = this.value;
+// });
+
+// inputField.addEventListener('keydown', function (event) {
+//   if (event.code === ('ControlLeft' && ' '))
+//   event.preventDefault();
+//   this.style.display = 'none';
+//   itemText.style.display = 'block';
+// });
 
 
 //Task2
@@ -38,32 +61,32 @@ resize.addEventListener('mousedown', initialResize);
 //необходимо отсортировать данные по этой колонке. Учтите, что числовые значения должны 
 //сортироваться как числа, а не как строки.
 
-const table = document.querySelector('table');
-const tableBody = document.querySelector('tbody');
-const columsTitle = document.querySelectorAll('th');
+// const table = document.querySelector('table');
+// const tableBody = document.querySelector('tbody');
+// const columsTitle = document.querySelectorAll('th');
 
-function sortColumn (event) {
-  const rows = Array.from(tableBody.rows);
-  const index = event.target.cellIndex;
+// function sortColumn (event) {
+//   const rows = Array.from(tableBody.rows);
+//   const index = event.target.cellIndex;
 
-  const sortedRows = rows.sort ((a, b) => {
-    const current = a.cells[index].innerText;
-    const current = b.cells[index].innerText;
+//   const sortedRows = rows.sort ((a, b) => {
+//     const current = a.cells[index].innerText;
+//     const current = b.cells[index].innerText;
 
-    if (current > next) {
-      return 1;
-    }
+//     if (current > next) {
+//       return 1;
+//     }
 
-    if (current < next) {
-      return - 1;
-    }
+//     if (current < next) {
+//       return - 1;
+//     }
 
-    return 0;
-  })
+//     return 0;
+//   })
 
- tableBody.append(...sortedRows)
-}
+//  tableBody.append(...sortedRows)
+// }
 
-columsTitle.forEach(item => item.addEventListener('click', sortColumn));
+// columsTitle.forEach(item => item.addEventListener('click', sortColumn));
 
-console.log(columsTitle)
+// console.log(columsTitle)
