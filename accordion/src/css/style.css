@@ -1,0 +1,88 @@
+.accordion {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #f6704b;
+  min-height: 100vh;
+  padding: 35px 0;
+}
+.accordion__item_location {
+  background-color: #620808;
+  color: #ffe9c1;
+}
+.accordion__item_music {
+  background-color: #a53f3f;
+  color: #f4ce74;
+}
+.accordion__item_noteds {
+  background-color: #f4ce74;
+  color: #7f301e;
+}
+.accordion__item_books {
+  background-color: #ffe9c1;
+  color: #7f301e;
+}
+.accordion__item_tendances {
+  background-color: #d5441c;
+  color: #ffe9c1;
+}
+.accordion__holder {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 30px 20px;
+}
+.accordion__item-title {
+  padding-left: 56px;
+  font-size: 24px;
+}
+.accordion__item-content {
+  -webkit-box-shadow: inset 0px 0px 5px 1px rgba(0, 0, 0, 0.24);
+          box-shadow: inset 0px 0px 5px 1px rgba(0, 0, 0, 0.24);
+  padding: 20px 10px;
+  font-size: 17px;
+  line-height: 1.6em;
+  text-align: justify;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 380px;
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+  background-color: #f6704b;
+}
