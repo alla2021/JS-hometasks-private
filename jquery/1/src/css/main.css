@@ -1,0 +1,170 @@
+.buy-game {
+  min-height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #282d3e;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 auto;
+}
+.buy-game__wrapper {
+  height: 400px;
+  background-color: #212434;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 15px;
+}
+.buy-game__list {
+  background-color: #2b2f3f;
+  color: white;
+  padding: 30px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  text-align: center;
+}
+.buy-game__item {
+  cursor: pointer;
+}
+.buy-game__item:hover {
+  opacity: 0.5;
+}
+.buy-game__tab_info {
+  display: none;
+  background-color: #212434;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0 30px;
+}
+.buy-game__tab__info.active {
+  display: block;
+}
+.buy-game__tab_ratings {
+  display: none;
+}
+.buy-game__tab_ratings.active {
+  display: block;
+}
+.buy-game__tab_where-to-buy.active {
+  display: block;
+}
+.buy-game__tab_where-to-buy {
+  display: none;
+}
+.buy-game__column_game-description {
+  padding-left: 40px;
+}
+.buy-game__title {
+  font-size: 32px;
+  padding-top: 10px;
+}
+.buy-game__subtitle {
+  font-size: 14px;
+}
+.buy-game__description {
+  padding: 40px 0 55px;
+}
+.buy-game__buy-it {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.buy-game__price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.buy-game__price-off {
+  color: yellow;
+  font-size: 12px;
+}
+.buy-game__price-total {
+  font-size: 32px;
+}
+.buy-game__btn {
+  height: 60px;
+  width: 160px;
+  text-transform: uppercase;
+  background-color: #13e18c;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+.buy-game__btn:hover {
+  opacity: 0.5;
+}
+
+.disable {
+  opacity: 0.3;
+  border-left: 0;
+  border-top: 0;
+  border-right: 0;
+  border-bottom: 4px solid transparent;
+}
+
+.active {
+  border-left: 0;
+  border-top: 0;
+  border-right: 0;
+  border-bottom: 4px solid #fff;
+  opacity: 1;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  color: white;
+  font-family: "Lato", sans-serif;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 600px;
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+}

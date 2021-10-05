@@ -1,0 +1,130 @@
+.buy-game {
+  min-height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #282d3e;
+  display: flex;
+  align-items: center;
+  
+  margin: 0 auto;
+
+  &__wrapper {
+    height: 400px;
+    background-color: #212434;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+  }
+
+  &__list {
+    background-color: #2b2f3f;
+    color: white;
+    padding: 30px 0;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+  }
+
+  &__item {
+    cursor: pointer;
+    &:hover {
+      opacity: 0.5;
+    }
+  }
+
+  &__tab {
+    &_info {
+      display: none;
+      background-color: #212434;
+      color: white;
+      display: flex;
+      padding: 0 30px;
+    }
+    
+    &__info.active {
+      display: block;
+    }
+    &_ratings {
+      display: none;
+    }
+    &_ratings.active {
+      display: block;
+    }
+    &_where-to-buy.active {
+      display: block;
+    }
+    &_where-to-buy {
+      display: none;
+    }
+  }
+
+  &__column {
+    &_game-description {
+        padding-left: 40px;
+  }
+}
+
+  &__title {
+   font-size: 32px;
+   padding-top: 10px;
+  }
+
+  &__subtitle {
+    font-size: 14px;
+    }
+
+  &__description {
+    padding: 40px 0 55px;
+  }
+
+
+
+  &__buy-it {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__price {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__price-off {
+    color: yellow;
+    font-size: 12px;
+  }
+
+  &__price-total {
+    font-size: 32px;
+  }
+
+  &__btn {
+    height: 60px;
+    width: 160px;
+    text-transform: uppercase;
+    background-color: #13e18c;
+    color: white;
+    border: none;
+    cursor: pointer;
+
+    &:hover {
+      opacity: 0.5;
+    }
+  }
+}
+
+.disable {
+  opacity: 0.3;
+  border-left: 0;
+  border-top: 0;
+  border-right: 0;
+  border-bottom: 4px solid transparent;
+}
+.active {
+  border-left: 0;
+  border-top: 0;
+  border-right: 0;
+  border-bottom: 4px solid #fff;
+  opacity: 1;
+}
