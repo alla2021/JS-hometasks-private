@@ -1,0 +1,13 @@
+.nav {
+  font-size: 22px;
+  text-transform: uppercase;
+  color: white;
+
+  &__list {
+  display: flex;
+  }
+
+  &__item {
+    margin: 0 45px;
+  }
+}
