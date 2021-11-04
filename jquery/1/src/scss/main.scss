@@ -1,0 +1,40 @@
+@import 'buy-game';
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  color: white;
+  font-family: 'Lato', sans-serif;
+  transition: all 1s ease;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 600px;
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+}
+
