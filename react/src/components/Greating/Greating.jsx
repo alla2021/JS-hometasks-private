@@ -1,19 +1,18 @@
-import React from 'react'
+import React from 'react';
 
-const Greating = (props) => {
-    
+const Greating = ({ name }) => {   
 const now = new Date().getHours();
+let greeting = '';
     if(now >= 22 && now <= 3){
-        return <h1>Good night, {props.name}</h1>
-    };
-    if (now >= 3 && now <= 12) {
-        return <h1>Good morning, {props.name}</h1>
-    };
-    if(now >= 12 && now <= 18){
-        return <h1>Good afternoon, {props.name}</h1>
-    };
-    if (now >= 18 && now <= 22) {
-        return <h1>Good evening, {props.name}</h1>
-    };
+       greeting = 'Good night';
+    };  if (now >= 3 && now <= 12) {
+        greeting = 'Good morning';
+    }; if(now >= 12 && now <= 18){
+        greeting = '“Good afternoon';
+    }; if (now >= 18 && now <= 22) {
+        greeting = 'Good evening';
+    }; 
+    return (
+        <h2>{greeting}, {name}</h2>)
 }
 export default Greating;

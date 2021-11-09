@@ -6,8 +6,11 @@ const Navigation = () => {
   return (
     <nav className='nav'>
       <ul className='nav__list'>
-      {items.map(item => <li  className='nav__item'><a href={'/'+item}>{item}</a></li>
-        )}
+      {items.map(item => (
+      <li key={item} className='nav__item'>
+        <a href={'/'+item}>{item}</a>
+      </li>
+      ))}
      </ul>
     </nav>
   )
