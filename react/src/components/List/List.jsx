@@ -1,21 +1,21 @@
 import React from 'react';
 
-class UserCard extends React.Component {
-  render() {
-    const { firstName, lastName, age } = this.props;
+// class UserCard extends React.Component {
+//   render() {
+//     const { firstName, lastName, age } = this.props;
 
-    return (
-      <li>
-        Name: {firstName}
-        <br />
-        Last Name: {lastName}
-        <br />
-        Age: {age}
-        <br />
-      </li>
-    );
-  }
-}
+//     return (
+//       <li>
+//         Name: {firstName}
+//         <br />
+//         Last Name: {lastName}
+//         <br />
+//         Age: {age}
+//         <br />
+//       </li>
+//     );
+//   }
+// }
 
 class List extends React.Component {
   constructor() {

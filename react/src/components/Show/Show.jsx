@@ -1,5 +1,4 @@
  import React from 'react'
-
 class Show extends React.Component {
   constructor() {
     super();
@@ -16,18 +15,19 @@ class Show extends React.Component {
   }
 
   render() {
-    const content = "Lorem";
+    const content = "Lorem"
     return (
       <>
       <button onClick={this.handleClick} className='btn'>
         {this.state.open ? "Show" : "Hide"}
       </button>
-      <div className='content'>
-        <ShowHide />
+      <div className='text'>
+        {this.state.open ? `${content}` : null}
       </div>
       </>
     )
   }
 };
+
 
 export default Show;
