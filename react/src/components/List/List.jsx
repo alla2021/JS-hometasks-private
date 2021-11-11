@@ -17,40 +17,55 @@ import React from 'react';
 //   }
 // }
 
-class List extends React.Component {
-  constructor() {
-    super();
-    this.state = {
-      users: [],
-    };
-    this.fetchUsers();
-  }
+// const UserList = ({users}) => {
+//   return (
+//     <ul>
+//       {users.map((user) => (
+//             <UserCard key={item.firstName} {...item} />
+//           ))}
+//     </ul>
+//   )
+// }
+// class List extends React.Component {
+//   constructor() {
+//     super();
+//     this.state = {
+//       users: [],
+//     };
+//     this.fetchUsers();
+//   }
 
-  fetchUsers() {
-    fetch('https://jsonplaceholder.typicode.com/users')
-      .then((response) => response.json())
-      .then((data) => this.setState({ users: data }));
-  }
+//   fetchUsers() {
+//     fetch('https://jsonplaceholder.typicode.com/users')
+//       .then((response) => response.json())
+//       .then((data) => this.setState({ users: data }));
+//   }
 
-  render() {
-    // const { users } = this.props;
-    const { users } = this.state;
+//   getPostsById(id) {
+//     fetch(`https://jsonplaceholder.typicode.com/posts?userId=2=${id}`).then(
+//       (response) => response.json ())
+//       .then((posts) => this.setState({ posts: posts }));
+//   }
 
-    return (
-      users.lenght !== 0 && (
-        <ul>
-          {/* {users.map((item) => (
-            <UserCard key={item.firstName} {...item} />
-          ))} */}
-          {users.map(({ id, name}) => (
-            <li key={id}>
-              Name: {name};
-            </li>
-          ))}
-        </ul>
-      )
-    );
-  }
-}
+//   render() {
+//     // const { users } = this.props;
+//     const { users } = this.state;
 
-export default List;
+//     return (
+//       users.lenght !== 0 && (
+//         <ul>
+//           {/* {users.map((item) => (
+//             <UserCard key={item.firstName} {...item} />
+//           ))} */}
+//           {users.map(({ id, name}) => (
+//             <li key={id}>
+//               Name: {name};
+//             </li>
+//           ))}
+//         </ul>
+//       )
+//     );
+//   }
+// }
+
+// export default List;
